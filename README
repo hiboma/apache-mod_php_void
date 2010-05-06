@@ -1,0 +1,8 @@
+An Apache Module using with PECL htscanner
+
+	# httpd.conf
+	LoadModule php_void_module modules/mod_php_void.so
+
+	# php.ini
+	extension=htscanner.so
+
