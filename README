@@ -6,3 +6,8 @@ An Apache Module using with PECL htscanner
 	# php.ini
 	extension=htscanner.so
 
+PECL の htscanner を使う時に、sever/core.cにパッチを当てて 空の php_value,
+php_flag を埋め込む必要があるが、そのパッチの代わりにロードして使うモジュール
+
+Apacheが htaccessで php_value / php_flag を見つけても 500 Error でコケないように
+するだけのモジュールになります
